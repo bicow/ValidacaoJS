@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação JS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div>
+        <div>
+            <h2>Validação JS</h2>
+        </div>
+
+        <div>
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <div>
+                    <input id="nome" name="nome" type="text" required >
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="endereco">Endereço</label>
+                    <div>
+                    <input id="endereco" name="endereco" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <div>
+                    <input id="bairro" name="bairro" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="cep">CEP</label>
+                    <div>
+                    <input maxlength="9" oninput="formatCEP(event)" id="cep" name="cep" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <div>
+                    <input id="cidade" name="cidade" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="estado">Estado</label>
+                    <div>
+                    <input id="estado" name="estado" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone</label>
+                    <div>
+                    <input maxlength="14" oninput="formatTelefone(event)" id="telefone" name="telefone" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="celular">Celular</label>
+                    <div>
+                    <input maxlength="16" oninput="formatCelular(event)" id="celular" name="celular" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="rg">RG</label>
+                    <div>
+                    <input maxlength="12" oninput="formatRG(event)" id="rg" name="rg" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="cpf">CPF</label>
+                    <div>
+                    <input oninput="formatCPF(event)" maxlength="14" id="cpf" name="cpf" type="text" required>
+                    <p></p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
